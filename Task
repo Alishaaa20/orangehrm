@@ -1,0 +1,21 @@
+package Basic;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class Groups1 {
+
+	@Test(groups="account")
+	public void CreataccoutTest() {
+		System.out.println("accout is created");
+		Assert.assertEquals("pune", "banglore");
+	}
+	@Test
+	public void ModifyaccoutTest() {
+		System.out.println("accout is modify");
+	}
+	@Test(groups="account")
+	public void DeletaccoutTest() {
+		System.out.println("accout is delect");
+	}
+}
